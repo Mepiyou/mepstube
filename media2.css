@@ -1,0 +1,166 @@
+body {
+    background-color: #121213;
+    overflow-y: scroll;
+}
+
+#container {
+    background-color: #121213;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+#main1 {
+    flex: 2;
+}
+
+#main2 {
+    flex: 1;
+    font-size: x-small;
+}
+
+#head {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    background-color: #121213;
+}
+
+
+
+/* 1. Pour les écrans de moins de 768px (tablettes et petits smartphones) */
+@media (max-width: 768px) {
+
+    /* Changer la disposition du header */
+    #head {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        flex-direction: column;
+        /* Passe en colonne */
+        align-items: center;
+        /* Centrer le contenu */
+        justify-content: center;
+    }
+
+
+    #logo {
+        font-size: 18px;
+    }
+
+    .search-container {
+        width: 80%;
+        /* Réduit la taille de la barre de recherche */
+    }
+
+    .search-input {
+        font-size: 14px;
+    }
+
+    .search-button {
+        font-size: 14px;
+    }
+
+    #main {
+        display: flex;
+
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-direction: column;
+    }
+
+    #main1,
+    #main2 {
+        width: 100%;
+    }
+
+    /* Ajuster la taille des images dans les commentaires et les chaînes */
+    .channel img,
+    .commentaire img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .photo {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* 2. Pour les écrans de moins de 480px (téléphones mobiles très petits) */
+@media (max-width: 480px) {
+
+    /* Réduire encore les tailles et espacement */
+    #head {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    #logo {
+        font-size: 16px;
+    }
+
+    .search-container {
+        width: 90%;
+        /* Maximiser l'espace pour la recherche */
+    }
+
+    .search-input {
+        font-size: 12px;
+    }
+
+    .search-button {
+        font-size: 12px;
+    }
+
+    #main1,
+    #main2 {
+        font-size: small;
+        /* Réduire la taille du texte pour plus de lisibilité */
+    }
+
+
+    #channel2 {
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    #channel2 span #sec {
+        align-items: center;
+    }
+
+
+
+    .channel {
+        overflow-x: scroll;
+
+    }
+
+
+
+
+    .channel img,
+    .commentaire img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .photo {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .main3 {
+        flex-direction: row;
+        /* Empiler les éléments verticalement */
+        gap: 15px;
+    }
+
+    /* Réduire l'espacement dans le couliser */
+    #couliser p {
+        padding: 2px;
+    }
+}

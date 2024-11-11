@@ -1,0 +1,84 @@
+@media (max-width: 768px) {
+
+
+
+
+    /* Masquer la section .aside2 sur les écrans plus petits (tablettes portrait, smartphones) */
+    .aside2 {
+        display: none;
+    }
+
+
+}
+
+
+@media (max-width: 456px) {
+
+    #main1 {
+        flex-direction: column;
+    }
+
+    .search-container {
+        display: flex;
+        align-items: center;
+        background-color: rgb(79, 76, 76);
+        border-radius: 50px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 5px 15px;
+        width: 250px;
+    }
+
+    .search-input {
+        border: none;
+        outline: none;
+        flex-grow: 1;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 25px;
+    }
+
+    .search-button {
+        background-color: #575454;
+        border: none;
+        padding: 5px 10px;
+        margin-left: 4px;
+        cursor: pointer;
+        border-radius: 10px;
+        color: white;
+        font-size: 16px;
+    }
+
+    .search-button:hover {
+        background-color: #cc0000;
+    }
+
+
+    #aside1 {
+        width: 100%;
+    }
+
+    #logo,
+    #aside1 li {
+        font-size: x-small;
+
+
+    }
+
+    img {
+        width: 80%;
+    }
+
+    .photo {
+        width: 300px;
+        /* Réduit la taille de l'image sur les écrans moyens et petits */
+        height: 180px;
+        /* Ajuste aussi la hauteur pour garder le ratio */
+    }
+
+
+    #main3a {
+        display: block;
+    }
+
+
+}
