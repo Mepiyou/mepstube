@@ -164,3 +164,45 @@ body {
         padding: 2px;
     }
 }
+
+
+
+
+#footer-mobil{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    height: 10%;
+    background-color: #121213;;
+}
+#footer-mobil span{
+    color: white;
+}
+
+.footer-mobil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-mobil .material-symbols-outlined{
+
+    font-size: x-large;
+}
+
+#footer-mobil p{
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+#footer-mobil{
+ padding-left: 0;
+ padding-right: 10px;
+}

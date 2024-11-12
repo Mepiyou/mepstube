@@ -338,3 +338,9 @@ iframe {
     opacity: 1;  /* L'élément redevient visible à la fin */
   }
 }
+
+
+
+#footer-mobil{
+  display: none;
+}
