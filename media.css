@@ -8,44 +8,118 @@
         display: none;
     }
 
+    #aside{
+        display:none;
+    }
+
+    #main{
+        width: 100%;
+    }
+
+    
+    #logo-mobile{
+        display: flex;
+        align-items: center;
+    }
+    #logo-mobile #logo{
+        font-size: x-large;
+    }
 
 }
 
 
 @media (max-width: 456px) {
 
-    #main1 {
+
+    /*==============================================================*/
+    #footer-mobil{
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        bottom:0;
+        width:100%;
+        height: 10%;
+        background-color: #121213;;
+    }
+    #footer-mobil span{
+        color: white;
+    }
+    
+    .footer-mobil{
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
+    #footer-mobil .material-symbols-outlined{
+
+        font-size: x-large;
+    }
+
+    #footer-mobil p{
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+    #footer-mobil{
+     padding-left: 0;
+     padding-right: 10px;
+    }
+
+
+    #main1{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+
+
+    /*==============================================================*/
+   
+     .search-box{
+        border-radius: 50px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 5px 15px;
+        
+
+     }
     .search-container {
         display: flex;
         align-items: center;
         background-color: rgb(79, 76, 76);
-        border-radius: 50px;
+        border-radius: 60px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         padding: 5px 15px;
-        width: 250px;
+        width: 100%;
     }
 
     .search-input {
         border: none;
         outline: none;
         flex-grow: 1;
-        padding: 10px;
+        padding: 5px;
         font-size: 16px;
         border-radius: 25px;
+        width: 100%;
     }
 
     .search-button {
         background-color: #575454;
         border: none;
-        padding: 5px 10px;
-        margin-left: 4px;
+       
+      margin: 0%;
         cursor: pointer;
         border-radius: 10px;
         color: white;
-        font-size: 16px;
+        font-size: 8px;
+        width: 54px;
+        
     }
 
     .search-button:hover {

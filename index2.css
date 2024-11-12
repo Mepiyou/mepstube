@@ -33,7 +33,7 @@ body {
     padding-top: 15px;
     padding-bottom: 15px;
     position: sticky;
-
+    z-index: 1000;
     top: 0;
 
     justify-content: space-between;
@@ -158,10 +158,33 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
+    width: 100%;
+
 }
+#vid{
+    width: 100%;
+    height: 432px;
+    padding-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 iframe {
     border-radius: 15px;
+    width: 560;
+    height: 315;
+    
 }
 
 #main1b span:hover {
@@ -279,4 +302,39 @@ iframe {
     height: 195px;
     width: 300px;
     border-radius: 15px;
+}
+
+#main1 ,#post {
+    opacity: 0;          /* Initialement l'élément est invisible */
+    animation: fadeIn 0.5s forwards;  /* L'animation dure 1 seconde et restera dans son état final */
+    animation-delay: 0.5s; /* L'animation commencera après un délai de 1 seconde */
+  }
+  
+  /* Définir l'animation "fadeIn" */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;  /* L'élément commence invisible */
+    }
+    100% {
+      opacity: 1;  /* L'élément devient totalement visible */
+    }
+  }
+
+
+
+#head #sec{
+    animation: blink 1.5s infinite; /* L'animation dure 1 seconde et se répète indéfiniment */
+  }
+
+/* Définir l'animation "blink" */
+@keyframes blink {
+  0% {
+    opacity: 1;  /* L'élément est visible au début */
+  }
+  50% {
+    opacity: 0;  /* L'élément devient invisible à mi-chemin */
+  }
+  100% {
+    opacity: 1;  /* L'élément redevient visible à la fin */
+  }
 }

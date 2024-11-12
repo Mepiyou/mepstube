@@ -315,3 +315,93 @@ div img {
 
 
 }
+
+.titre img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.titre p{
+    align-content: center;
+}
+
+
+
+
+#footer-mobil{
+    color: white;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#footer-mobil span{
+    color: white;
+    font-size: smaller;
+}
+
+.footer-mobil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo-mobile{ 
+    display: none;
+}
+
+
+
+#main3 {
+    opacity: 0;          /* Initialement l'élément est invisible */
+    animation: fadeIn 0.5s forwards;  /* L'animation dure 1 seconde et restera dans son état final */
+    animation-delay: 0.5s; /* L'animation commencera après un délai de 1 seconde */
+  }
+  
+  /* Définir l'animation "fadeIn" */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;  /* L'élément commence invisible */
+    }
+    100% {
+      opacity: 1;  /* L'élément devient totalement visible */
+    }
+  }
+
+
+ /* Animation pour faire clignoter #sec */
+#main1 #sec {
+  animation: blink 1.5s infinite; /* L'animation dure 1 seconde et se répète indéfiniment */
+}
+
+.aside2 #sec {
+    animation: blink 1.5s infinite; /* L'animation dure 1 seconde et se répète indéfiniment */
+  }
+
+
+  #head#sec {
+    animation: blink 1.5s infinite; /* L'animation dure 1 seconde et se répète indéfiniment */
+  }
+
+/* Définir l'animation "blink" */
+@keyframes blink {
+  0% {
+    opacity: 1;  /* L'élément est visible au début */
+  }
+  50% {
+    opacity: 0;  /* L'élément devient invisible à mi-chemin */
+  }
+  100% {
+    opacity: 1;  /* L'élément redevient visible à la fin */
+  }
+}
+
+
+
+
+
+
+
+
+
