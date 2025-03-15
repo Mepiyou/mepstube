@@ -1,6 +1,6 @@
 
 # Projet :  YouTube
-lien vere le site https://touriel19.github.io/mepstube/
+lien vere le site https://mepiyou.github.io/mepstube/
 ## Description du Projet
 
 Ce projet est une implémentation front-end d'une page de type YouTube utilisant uniquement **HTML** et **CSS**. Le projet permet de simuler une page d'accueil de YouTube et de visualiser des vidéos, tout en étant optimisé pour les appareils mobiles.
